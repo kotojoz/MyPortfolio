@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">Par mani</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projekti</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakti</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img src="images/hero_image.jpg" alt="Staņislava Ostrovska foto">
+            <h1>Sveiki, es esmu Staņislavs Ostrovskis</h1>
+        </section>
 
+        <section id="about">
+            <h2>Par mani</h2>
+            <p>"Meklējot savu radošās izpausmes veidu, esmu sapratis, ka mana
+               aizraušanās ir radīšana caur kodu. Lai gan māksla un mūzika nav manas stiprās puses, programmēšana man
+               sniedz nepieciešamo platformu ideju realizēšanai. Pirmo pieredzi guvu 2022. gadā, izstrādājot teksta
+               spēles Java valodā, taču tagad esmu fokusējies uz tīmekļa izstrādi (Web Development). Šis portfolio ir
+               mans pirmais solis ceļā uz mūsdienīgu un funkcionālu mājaslapu izveidi."</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projekti</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Teksta spēles Java valodā</h3>
+                    <p>Mani pirmie soļi programmēšanā, izstrādājot interaktīvas teksta spēles.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Personīgais portfolio</h3>
+                    <p>Šī mājaslapa, kas veidota, izmantojot HTML un CSS.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakti</h2>
+            <ul>
+                <li>E-pasts: stanislavs@example.com</li>
+                <li>LinkedIn: <a href="#">linkedin.com/in/stanislavs</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 My Portfolio. Visas tiesības aizsargātas.</p>
+    </footer>
 </body>
 </html>
