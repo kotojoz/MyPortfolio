@@ -1,0 +1,1 @@
+This is a simple portfolio example created during my studies.
