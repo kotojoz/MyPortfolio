@@ -55,6 +55,10 @@ nav {
 }
 
 main {
+    /* Container logic moved to sections */
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -64,7 +68,7 @@ section {
     padding: 5rem 0;
 }
 
-#hero {
+#hero .container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -111,8 +115,6 @@ h2 {
 
 #about {
     background-color: var(--secondary-bg);
-    padding: 5rem 2rem;
-    margin: 0 -2rem;
 }
 
 #about p {
@@ -194,7 +196,7 @@ footer {
         padding: 3rem 0;
     }
 
-    #hero {
+    #hero .container {
         flex-direction: column;
         text-align: center;
         padding-top: 2rem;
@@ -219,27 +221,17 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    main {
+    .container {
         padding: 0 1.5rem;
     }
 
     nav {
         padding: 1rem 1.5rem;
     }
-
-    #about {
-        padding: 3rem 1.5rem;
-        margin: 0 -1.5rem;
-    }
 }
 
 @media (max-width: 480px) {
-    #about {
-        padding: 3rem 1rem;
-        margin: 0 -1rem;
-    }
-
-    main {
+    .container {
         padding: 0 1rem;
     }
 
